@@ -41,9 +41,11 @@ function App() {
             <h2>
               Welcome, <span>{user.name}</span>
             </h2>
-            <button onClick={Logout}>Logout</button>
-            <Search />
+            <button className="btn" onClick={Logout}>
+              Logout
+            </button>
           </div>
+          <Search />
         </>
       ) : (
         <LoginForm Login={Login} error={error} />

@@ -1,3 +1,20 @@
 * {
   background-color: #e5e5e5;
 }
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: #002240;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
