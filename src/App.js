@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import LoginForm from "./components/LoginForm";
 import Search from "./components/Search";
 
@@ -34,14 +33,6 @@ function App() {
     setUser({ name: "", email: "" });
   };
 
-  useEffect(() => {
-    const fetchCustomer = async () => {
-      const response = await axios.get("https://www.bing.com");
-
-      console.log(response.data);
-    };
-    fetchCustomer();
-  }, []);
   return (
     <div className="App">
       {user.email !== "" ? (
