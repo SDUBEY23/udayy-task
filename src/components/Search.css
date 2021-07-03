@@ -1,0 +1,4 @@
+.display-frame {
+  display: flex;
+  flex-direction: column;
+}
