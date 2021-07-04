@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function LoginForm({ Login, error }) {
   const [details, setDetails] = useState({ name: "", email: "", password: "" });
@@ -7,6 +7,15 @@ function LoginForm({ Login, error }) {
     e.preventDefault();
     Login(details);
   };
+
+  useEffect(() => {
+    const searchData = localStorage.getItem("loginDetails");
+    setDetails(JSON.parse(searchData));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("loginDetails", JSON.stringify(details));
+  });
   return (
     <div className="login">
       <form className="login-form" onSubmit={submitHandler}>

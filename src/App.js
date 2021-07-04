@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LoginForm from "./components/LoginForm";
 import Search from "./components/Search";
 
@@ -33,6 +33,14 @@ function App() {
     setUser({ name: "", email: "" });
   };
 
+  useEffect(() => {
+    const searchData = localStorage.getItem("useDetails");
+    setUser(JSON.parse(searchData));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("useDetails", JSON.stringify(user));
+  });
   return (
     <div className="App">
       {user.email !== "" ? (

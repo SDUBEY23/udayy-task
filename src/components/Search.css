@@ -38,6 +38,8 @@ iframe {
   border-style: none;
   border-color: none;
   border-image: none;
+  overflow: auto;
+  overflow-x: auto;
 }
 
 .btn-search {
