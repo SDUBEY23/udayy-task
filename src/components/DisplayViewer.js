@@ -8,6 +8,7 @@ function DisplayViewer({ onChange, onClick, value }) {
           type="text"
           name="searchUrl"
           id="searchUrl"
+          placeholder="Enter URL to search"
           onChange={onChange}
           value={value}
         />
