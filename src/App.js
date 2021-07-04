@@ -17,13 +17,11 @@ function App() {
       details.email === adminUser.email &&
       details.password === adminUser.password
     ) {
-      console.log("logged in");
       setUser({
         name: details.name,
         email: details.email,
       });
     } else {
-      console.log("no match");
       setError("Details do not match");
     }
   };

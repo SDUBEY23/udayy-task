@@ -30,7 +30,7 @@ Once the app is compiled and bundled successfully you should see the login scree
 
 #### 2. User inputs a url/webpage in TextBox2, this opens up in View2
 
-#### 3. The UI should be responsive for wide ranges of browserresolution/zoom.
+#### 3. The UI should be responsive for wide ranges of browser resolution/zoom.
 
 #### 4. Users should be able to see both the view-elements completely
 

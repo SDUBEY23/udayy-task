@@ -2,7 +2,7 @@
   background-color: #e5e5e5;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: montserrat, sans-serif;
 }
 
@@ -25,6 +25,7 @@
   margin-bottom: 15px;
   padding-bottom: 10px;
   letter-spacing: -1px;
+  color: #002240;
 }
 
 .login-form > input {
@@ -42,12 +43,23 @@
 .submit-btn {
   padding: 17px 30px;
   margin-top: 10px;
-  background: black;
+  background: #002240;
   border: none;
   color: white;
   font-size: 14px;
   font-family: "Inter";
   border-radius: 3px;
+  transition: 0.4s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02);
+}
+
+.error {
+  color: #002240;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .welcome {
@@ -56,6 +68,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 15px 10px;
+}
+
+.welcome h2 {
+  color: #002240;
 }
 
 .btn {
